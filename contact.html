@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERGIER CONSULTING</title>
+</head>
+
+<body> <!-- Partie visible du site -->
+    <header>
+        <img src="./logopro2.jpg" alt="Image du logo VERGIER CONSULTING" id="logo">
+        <ul>
+            <li>Métiers</li>
+            <li>Projet</li>
+            <li>Contact</li>
+            <li>A propos</li>
+        </ul>
+    </header>
+
+    <form action="" method="get">
+        <p>
+            Notre équipe est à votre disposition, n'hésitez pas à nous contacter !
+        </p>
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <p>
+                <label for="">Nom :</label>
+                <input type="text" name="pseudo" id="pseudo" 
+                placeholder="Saisir votre nom" 
+                size="22" maxlength="16">
+            </p>
+            <p>
+                <label for="">Prénom :</label>
+                <input type="text" name="pseudo" id="pseudo" 
+                placeholder="Saisir votre prénom" 
+                size="22" maxlength="16">
+            </p>
+            <p>
+                <label for="">Téléphone :</label>
+                <input type="text" placeholder="Saisir votre numéro">
+            </p>
+            <p>
+                <label for="">Mail :</label>
+                <input type="email" name="email" id="email" 
+                placeholder="Saisir votre adresse e-mail" size="22">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Votre problème / demande :</legend>
+            <p> Corps de métier : <br> <br>
+                <label for="devweb">Développement Web</label>
+                <input type="radio" name="métiers" id="devweb"> <br>
+                <label for="informatique">Informatique</label>
+                <input type="radio" name="métiers" id="informatique">
+            </p>
+            <p>
+                <label for="">Ville :</label> <br>
+                <input type="text" placeholder="Saisir votre ville...">
+            </p>
+            <p>
+                <label for="">Veuillez saisir plus d'informations sur votre demande :</label>
+            </p>
+            <p>
+                <textarea name="" id="texte" cols="30" rows="10" 
+                placeholder="10 mots minimum..." spellcheck></textarea>
+            </p>
+            <p>
+                <label for="">Informations complémentaires :</label>
+                <input type="file" multiple>
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
