@@ -40,66 +40,15 @@ font-family: 'Roboto Condensed', sans-serif;
 text-transform: uppercase;
 }
 
-.card-title {
-    font-size: 2rem;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-}
 
 /* ****************BODY****************** */
-
-.titre_global {
-    text-align: left;
-    line-height: 5.5rem;
-    font-size: 6rem;
-    padding-top: 2.9em;
-    padding-left: 0.8em;
-}
 
 .img-fluid {
     width: 11.25rem;
 }
 
-header {
-    height: 650px;
-    background-image: url(/images/scott-graham-5fNmWej4tAA-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .nav-item {
     padding-left: 60px;
-}
-
-#construire {
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-#informatique {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1.5em;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.text {
-    text-align: center;
-    margin-top: 15px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-main hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #71717A;
-    margin: 1em auto;
-    padding: 0;
-    width: 80%;
 }
 
 /* ****************FOOTER****************** */

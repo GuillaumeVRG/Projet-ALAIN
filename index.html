@@ -8,69 +8,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css%22%3E">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-    <div>
-    <header class="toppage">
-        <img src="logopro2.jpg" class="logo" alt="Logo VERGIER CONSULTING">
-            <nav class="liens">
-                <ul class="menu">
-                    <li><a href="index.html">Métiers</a></li>
-                    <li><a href="projet.html">Projet</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="a-propos.html">A propos</a></li>
-                </ul>
-            </nav>
-    </header>
-    </div>
-    <div>
-        <img class="image" src="images/EF6LO3PQRJ3QSBUY552EAHC2BE.jpg" alt="Image de fond ordinateur">
-    </div>
-    <section>
-        <div>
-            <h1 class="construire">CONSTRUIRE ENSEMBLE</h1>
-            <h2 class="informatique">VOTRE ARCHITECTURE INFORMATIQUE</h2>
-        </div>
-        <div>
-            <p class="text">Matériels informatique, solutions logiciels, expertise réseau, création de sites web, ALAIN VERGIER CONSULTING vous simplifie la vie.</p>
-        </div>
-    </section>
+ <!-- ***************************************NAVBAR********************************** -->
 
-    <footer>
-        <img src="./images/logo only.jpg" class="logofooter" alt="logo simple VERGIER CONSULTING">
-            <p class="textlogo">ALAIN VERGIER CONSULTING <br> vous donne les clés pour que votre <br> environnement informatique soit <br> dans les meilleures conditions.</p>
-        <ul class="entreprise" id="entreprise1"> ENTREPRISE
-            <li><a href="#">Métiers</a></li>
-            <li><a href="#">Projet</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-        </ul>
-        <ul class="aide" id="aide1"> AIDE
-            <li><a href="#">F.A.Q</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Termes & Conditions</a></li>
-            <li><a href="#">Haut de page</a></li>
-            <li><a href="#">ADMIN</a></li>
-        </ul>
-        <nav class="actualite"> ACTUALITE
-            <form action="get">
-                <label for=""></label>
-                <input type="text" name="email" id="email" 
-                placeholder="Entrez votre adresse e-mail">
-                <input type="submit">
-            </form>
-        </nav>
-        <p>Copyright 2022, All Rights Reserved By <br>
-            ALAIN VERGIER CONSULTING
-        </p>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid px-4 bg-white">
+            <a class="navbar-brand" href="">
+                <img src="logopro2.jpg" class="img-fluid" alt="">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="metiers.html">Métiers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="projet.html">Projet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="a-propos.html">A propos</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- ***************************************BODY********************************** -->
+      <header>
+        <div>
+         <h1 class="titre_global text-uppercase">
+           au coeur
+           <br>
+           du
+           <br>
+           digital
+          </h1>
+        </div>
+      </header>
+    <main>
+      <div class="container">
+            <p id="construire" class="pt-5">CONSTRUIRE ENSEMBLE</p>
+            <p id="informatique">VOTRE ARCHITECTURE INFORMATIQUE</p>
+            <p class="text">Matériels informatique, solutions logiciels, expertise réseau, création de sites web, ALAIN VERGIER CONSULTING vous simplifie la vie.</p>
+      </div>
+      <hr class="my-5">
+      <section>
+        <h2 class="text-center pb-4">articles récents</h2>
+        <div class="row row-cols-1 row-cols-md-3 pt-3 pb-3">
+          <div class="col">
+            <div class="card pb-2">
+              <img src="/images/ordinateur-fond.jpg" alt="Background ordinateur avec déco intérieur">
+              <div class="card-body">
+                <div class="card-title">la technologie</div>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <i class="fa-regular fa-clock py-1">
+                  </i>
+                  12/04/2023
+                </h6>
+                <p class="card-text mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque fugiat aspernatur, aut pariatur possimus dolorem quia corporis id consequatur quis facere quae alias sequi! Eligendi ullam nam ut voluptate.
+                  Molestias quas velit doloremque. Magnam a voluptate neque voluptates dolores quo eos corrupti ex aliquid doloribus. Officiis asperiores quia culpa impedit, voluptatem perferendis atque eveniet nihil neque, fugit qui id?
+                  Deleniti atque commodi velit expedita dolorum nostrum modi adipisci laudantium, molestiae voluptates aliquid eum nisi, eaque itaque iusto inventore eveniet? Aliquam consequatur impedit, libero tempore dolorum eaque beatae reprehenderit fuga.
+                  Voluptate vitae illo obcaecati distinctio officia unde soluta, reiciendis ab culpa quisquam et quae, recusandae ad provident voluptatibus veniam commodi. Assumenda dignissimos magni deleniti! Sequi incidunt ab officiis! Consectetur, optio.
+                  Quibusdam saepe, dolore tempore quod exercitationem neque, minus laudantium itaque blanditiis reprehenderit rem molestias nesciunt voluptate beatae, ipsum vel officiis facilis dolor quisquam. Doloremque eaque, velit blanditiis deserunt possimus sed!
+                </p>
+                <a href="" class="card-link">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card pb-2">
+              <img src="/images/ordinateur-fond2.jpg" alt="Ordinateur avec page de code">
+              <div class="card-body">
+                <div class="card-title text-uppercase">start coding !</div>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <i class="fa-regular fa-clock py-1">
+                  </i>
+                  20/04/2023
+                </h6>
+                <p class="card-text mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque fugiat aspernatur, aut pariatur possimus dolorem quia corporis id consequatur quis facere quae alias sequi! Eligendi ullam nam ut voluptate.
+                  Molestias quas velit doloremque. Magnam a voluptate neque voluptates dolores quo eos corrupti ex aliquid doloribus. Officiis asperiores quia culpa impedit, voluptatem perferendis atque eveniet nihil neque, fugit qui id?
+                  Deleniti atque commodi velit expedita dolorum nostrum modi adipisci laudantium, molestiae voluptates aliquid eum nisi, eaque itaque iusto inventore eveniet? Aliquam consequatur impedit, libero tempore dolorum eaque beatae reprehenderit fuga.
+                  Voluptate vitae illo obcaecati distinctio officia unde soluta, reiciendis ab culpa quisquam et quae, recusandae ad provident voluptatibus veniam commodi. Assumenda dignissimos magni deleniti! Sequi incidunt ab officiis! Consectetur, optio.
+                  Quibusdam saepe, dolore tempore quod exercitationem neque, minus laudantium itaque blanditiis reprehenderit rem molestias nesciunt voluptate beatae, ipsum vel officiis facilis dolor quisquam. Doloremque eaque, velit blanditiis deserunt possimus sed!
+                </p>
+                <a href="" class="card-link">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card pb-2">
+              <img src="/images/ordinateur-fond3.jpg" alt="Personne utilisant son pc portable">
+              <div class="card-body">
+                <div class="card-title text-uppercase">l'informatique</div>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <i class="fa-regular fa-clock py-1">
+                  </i>
+                  24/04/2023
+                </h6>
+                <p class="card-text mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque fugiat aspernatur, aut pariatur possimus dolorem quia corporis id consequatur quis facere quae alias sequi! Eligendi ullam nam ut voluptate.
+                  Molestias quas velit doloremque. Magnam a voluptate neque voluptates dolores quo eos corrupti ex aliquid doloribus. Officiis asperiores quia culpa impedit, voluptatem perferendis atque eveniet nihil neque, fugit qui id?
+                  Deleniti atque commodi velit expedita dolorum nostrum modi adipisci laudantium, molestiae voluptates aliquid eum nisi, eaque itaque iusto inventore eveniet? Aliquam consequatur impedit, libero tempore dolorum eaque beatae reprehenderit fuga.
+                  Voluptate vitae illo obcaecati distinctio officia unde soluta, reiciendis ab culpa quisquam et quae, recusandae ad provident voluptatibus veniam commodi. Assumenda dignissimos magni deleniti! Sequi incidunt ab officiis! Consectetur, optio.
+                  Quibusdam saepe, dolore tempore quod exercitationem neque, minus laudantium itaque blanditiis reprehenderit rem molestias nesciunt voluptate beatae, ipsum vel officiis facilis dolor quisquam. Doloremque eaque, velit blanditiis deserunt possimus sed!
+                </p>
+                <a href="" class="card-link">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+ <!-- **********************************FOOTER************************************* -->
+
+    <footer class="container-fluid mt-4">
+        <div class="row row-cols-1 row-cols-md-3 text-center pt-3 align-items-center">
+            <div class="col pb-4">
+                <img src="images/logo-only.jpg" alt="Image du logo Alain Vergier Consulting">
+                <p class="ms-3" >ALAIN VERGIER CONSULTING vous</p>
+                <p class="ms-3" >donne les clés pour que votre</p>
+                <p class="ms-3" >environnement informatique soit</p>
+                <p class="ms-3" >dans les meilleures conditions.</p>
+            </div>
+            <div class="col mt-2">
+              <h5 class="text-uppercase mb-4">
+                entreprise
+              </h5>
+              <h5 class="text-uppercase mt-3">
+                <a href="metiers.html">Métiers</a>
+              </h5>
+              <h5 class="text-uppercase mt-3">
+                <a href="projet.html">Projet</a>
+              </h5>
+              <h5 class="text-uppercase mt-3">
+                <a href="contact.html">Contact</a>
+              </h5>
+              <h5 class="text-uppercase mt-3 pb-4">
+                <a href="a-propos.html">A propos</a>
+              </h5>
+            </div>
+            <div class="col mt-2">
+              <h5 class="text-uppercase mb-4">
+                aide
+              </h5>
+              <h5 class="text-uppercase mt-3">
+                <a href="faq.html">F.A.Q</a>
+              </h5>
+              <h5 class="text-uppercase mt-3">
+                <a href="support.html">Support</a>
+              </h5>
+              <h5 class="text-uppercase mt-3">
+                <a href="termes&conditions.html">Termes &<br>Conditions</a>
+              </h5>
+            </div>
+            <hr class="my-5">
+        </div>
+
+        <div class="justify-content-center text-center">© Copyright 2022, All Rights Reserved By</div>
+        <div class="justify-content-center text-center">ALAIN VERGIER CONSULTING</div>
     </footer>
+
+ <!-- **********************************SCRIPTS************************************* -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
-    
 
 </html>
