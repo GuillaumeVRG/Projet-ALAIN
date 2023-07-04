@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos métiers{% endblock %}
+
+{% block body %}
+
+<!-- **********************************BODY************************************* -->
+
+<div class="container">
+  <!-- Titre -->
+  <h1 class="text-uppercase text-center py-5">nos metiers</h1>
+  <div class="row">
+    <!-- Côté responsive avec Bootstrap -->
+    <div class="col-md-6 d-flex flex-column justify-content-center pt-5 p-5 align-items-center">
+      <div class="bubble">
+        <!-- Image du métier -->
+        <img class="text-align-center" src="images/codage.png" alt="Image de codage avancé"/>
+      </div>
+      <div>
+        <!-- Nom, métier et description rapide personnelle -->
+        <h2 class="text-center py-5">Guillaume VERGIER</h2>
+        <h3 class="text-center py-3">Développeur Web <br> Web Mobile</h3>
+        <p>La création de sites est pour moi une nouveauté, 
+          et une énorme découverte. L’espace numérique m’a toujours attiré, 
+          et je suis curieux de nouveau à ce jour, 
+          de réaliser ce projet à l’aide de G TECH.</p>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center pt-5 pb-5 align-items-center">
+      <div class="bubble">
+        <!-- Image du métier -->
+        <img src="images/reparation ordi.jpg" alt="Image de réparation ordinateur"/>
+      </div>
+      <div>
+        <!-- Nom, métier et description rapide personnelle -->
+        <h2 class="text-center py-5">Alain VERGIER</h2>
+        <h3 class="text-center py-4">Gestion et traitement d'informations</h3>
+        <p class="my-2 text-center">Du métier depuis plus de 40 ans,
+          cette passion a toujours été ancrée en moi. 
+          Toute sorte de dépannage atypique ou non, sont une énigme. 
+          Spécialisation réseaux.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

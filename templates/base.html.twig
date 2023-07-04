@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Bienvenue!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %}
+
+        <!-- Liens fonts icones bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
+            <!-- Lien index -->
+
+            {% if app.request.attributes.get('_route') == 'app_blog' %}
+                <link rel="stylesheet" href="index.css">
+            {% endif %}
+
+            <!-- Lien métiers -->
+
+            {% if app.request.attributes.get('_route') == 'app_metiers' %}
+                <link rel="stylesheet" href="metiers.css">
+            {% endif %}
+
+            <!-- Lien projet -->
+
+            {% if app.request.attributes.get('_route') == 'app_projet' %}
+                <link rel="stylesheet" href="projet.css">
+            {% endif %}
+
+            <!-- Lien conditions générales d'utilisation (RGPD) -->
+
+            {% if app.request.attributes.get('_route') == 'app_CGU' %}
+                <link rel="stylesheet" href="CGU.css">
+            {% endif %}
+
+            <!-- Lien contact et formulaire -->
+
+            {% if app.request.attributes.get('_route') == 'app_contact' %}
+                <link rel="stylesheet" href="contact.css">
+            {% endif %}
+
+            <!-- Lien à propos -->
+
+            {% if app.request.attributes.get('_route') == 'app_a-propos' %}
+                <link rel="stylesheet" href="a-propos.css">
+            {% endif %}
+
+            <!-- Lien mentions légales -->
+
+            {% if app.request.attributes.get('_route') == 'app_mentions-legales' %}
+                <link rel="stylesheet" href="mentions-legales.css">
+            {% endif %}
+
+        {% endblock %}
+
+            <!-- Scripts -->
+
+        {% block javascripts %}
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+        {% endblock %}
+    </head>
+
+<!-- ***************************************NAVBAR********************************** -->
+
+    <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid px-4 bg-white">
+            <a class="navbar-brand" href="">
+              <!-- Logo -->
+                <img src="images/logopro2.jpg" class="img-fluid" alt="Logo du site">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Responsive -->
+          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <!-- Liens actifs-->
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/metiers">Métiers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/projet">Projet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/a-propos">A propos</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+<hr>
+        {% block body %}
+        {% endblock %}
+
+        <!-- **********************************FOOTER************************************* -->
+
+<hr>
+
+    <footer class="container-fluid mt-4">
+      <!-- Responsive -->
+        <div class="row row-cols-1 row-cols-md-3 text-center pt-3 align-items-center">
+            <div class="col pb-4">
+              <!-- Logo -->
+                <img src="images/logo-only.jpg" alt="Image du logo Alain Vergier Consulting">
+                <!-- Phrase d'accroche -->
+                <p class="ms-3" >ALAIN VERGIER CONSULTING vous</p>
+                <p class="ms-3" >donne les clés pour que votre</p>
+                <p class="ms-3" >environnement informatique soit</p>
+                <p class="ms-3" >dans les meilleures conditions.</p>
+            </div>
+            <div class="col mt-2">
+              <p class="text-uppercase mt-4 titre-footer"><strong>
+                <!-- Catégorie des liens -->
+                entreprise
+              </p></strong>
+              <!-- Liens actifs -->
+              <p class="text-uppercase my-4"><strong>
+                <a href="/metiers">Métiers</a>
+              </p></strong>
+              <p class="text-uppercase mb-4"><strong>
+                <a href="/projet">Projet</a>
+              </p></strong>
+              <p class="text-uppercase mb-4"><strong>
+                <a href="/contact">Contact</a>
+              </p></strong>
+              <p class="text-uppercase mt-3 pb-4"><strong>
+                <a href="/a-propos">A propos</a>
+              </p></strong>
+            </div>
+            <div class="col mt-2">
+              <p class="text-uppercase mb-4 titre-footer"><strong>
+                <!-- Catégorie des liens -->
+                Pages juridiques
+              </p></strong>
+              <!-- Liens actifs -->
+              <p class="text-uppercase mt-4"><strong>
+                <a href="/mentions-legales">Mentions légales</a>
+              </p></strong>
+              <p class="text-uppercase mt-4"><strong>
+                <a href="/CGU">Conditions générales <br> d'utilisation</a>
+              </p></strong>
+            </div>
+            <hr class="my-5">
+        </div>
+        <!-- Copyright -->
+        <div class="justify-content-center text-center">{{ "now"|date("Y") }}, Tous Droits Réservés Par</div>
+        <div class="justify-content-center text-center">ALAIN VERGIER CONSULTING</div>
+    </footer>
+
+    </body>
+</html>

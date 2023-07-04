@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet Gaming Campus{% endblock %}
+
+{% block body %}
+
+<!-- ***************************************BODY********************************** -->
+
+<div class="container">
+  <!-- Logo Gaming Campus + lien de redirection au click -->
+  <a href="https://gamingcampus.fr/" alt="Logo Gaming Campus" class="img-fluid">
+    <img src="/images/campus.png" alt="Logo Gaming Campus" class="container item-align-center pt-5 pb-5">
+  </a>
+</div>
+
+<div class="container">
+  <!-- Titre et sujet de la page -->
+  <h1 class="text-uppercase mt-5">Formation developpeur web - web mobile</h1>
+  <!-- Objectif de la formation-->
+  <p class="mt-5 text-center campus">
+    Ceci est une maquette réalisée par le biais de la formation de façon à pouvoir se perfectionner.<br></p>
+  <p class="mt-5 text-center campus">
+    Le but final sera de réaliser :</p>
+  <p class="mt-5 text-center campus">
+    <!-- Description des objectifs -->
+    <ul class="mt-5 mb-5 text-center objectifs">
+      <li>Le front-end du site</li>
+      <li>Un back-office pour la partie administration</li>
+      <li>Un back-end pour la base de données</li>
+    </ul>
+  </p>
+</div>
+
+{% endblock %}

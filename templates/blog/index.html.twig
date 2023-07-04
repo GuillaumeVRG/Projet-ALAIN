@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VERGIER Consulting{% endblock %}
+
+{% block body %}
+
+      <header>
+        <div>
+          <!-- Titre principal -->
+         <h1 class="titre_global text-uppercase">
+           au coeur
+           <br>
+           du
+           <br>
+           numérique
+          </h1>
+        </div>
+      </header>
+    <main>
+      <div class="container">
+            <!-- Phrase d'accroche VERGIER Consulting -->
+            <p id="construire" class="pt-5">CONSTRUIRE ENSEMBLE</p>
+            <h2 id="informatique">VOTRE ARCHITECTURE INFORMATIQUE</h2>
+            <p class="text">Matériels informatique, solutions logiciels, expertise réseau, création de sites web, ALAIN VERGIER CONSULTING vous simplifie la vie.</p>
+      </div>
+      <hr class="my-5">
+
+      <section>
+        <!-- Section articles -->
+        <h2 class="text-center pb-4">articles récents</h2>
+        <!-- L'ensemble des articles sont responsive -->
+        <div class="row row-cols-1 row-cols-md-3 pt-3 pb-3">
+        {% for article in articles %}
+          <div class="col">
+            <div class="card pb-2">
+              <!-- Image du premier acticle -->
+              <img src="images/{{article.Image}}">
+              <div class="card-body">
+                <!-- Titre du premier article-->
+                <div class="card-title">{{article.titre}}</div>
+                <h3 class="card-subtitle mb-2 text-body-secondary">
+                  <!-- Date et icône Font awesome -->
+                  <i class="fa-regular fa-clock py-1">
+                  </i>
+                  12/04/2023
+                </h3>
+                <!-- Zone texte de l'article-->
+                <p class="card-text mb-5">
+                  {{article.texte|u.wordwrap(3)|u.truncate(200, '...', false)}}
+                </p>
+                <!-- Lien actif de redirection -->
+                <a href="articles.html.twig" class="card-link">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+    </main>
+
+{% endblock %}

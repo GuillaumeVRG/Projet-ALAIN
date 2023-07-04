@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactez-nous{% endblock %}
+
+{% block body %}
+
+<!-- ***************************** FORMULAIRE ************************************** -->
+
+  <form class="row g-3">
+  <!-- Ici je créée toutes les catégories nécessaires à mon étude -->
+  <div class="col-md-6">
+    <label for="inputNom4" class="form-label">Nom</label>
+    <input type="string" class="form-control" id="inputNom4" placeholder="Entrez votre nom...">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPrénom4" class="form-label">Prénom</label>
+    <input type="string" class="form-control" id="inputNom4" placeholder="Entrez votre prénom...">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Ville</label>
+    <input type="string" class="form-control" id="inputCity" placeholder="Entrez votre ville...">
+  </div>
+  <div class="col-md-6">
+    <label for="inputTel" class="form-label">Votre numéro de téléphone</label>
+    <input type="int" class="form-control" id="inputTel" placeholder="Entrez votre numéro de téléphone...">
+  </div>
+  <div class="col-md-6">
+    <label for="inputTel" class="form-label">Information complémentaires</label>
+    <input type="text" class="form-control" id="inputTel" placeholder="Entrez des informations complémentaires...">
+  </div>
+</div>
+<div class="col-md-4">
+  <!-- Un menu déroulant pour orienter les problèmes du client -->
+  <label for="inputState" class="form-label">Votre demande</label>
+  <select id="inputState" class="form-select">
+    <option selected>Choisir...</option>
+    <option>Informatique</option>
+    <option>Website</option>
+  </select>
+</div>
+  <div class="col-12">
+    <!-- Un bouton rappel au cas où le client souhaite être recontacté -->
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Je souhaite être rappelé
+      </label>
+    </div>
+    <br>
+    <div class="form-check">
+      <!-- Politique RGPD et sa protection -->
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        En cochant cette case vous acceptez que vos données personnelles soient traitées par notre équipe.
+        <br>
+        Vous acceptez également nos <a href="CGU.html">Conditions Générales d'Utilisation.</a>
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <!-- Bouton Submit -->
+    <button type="button" class="btn btn-primary my-4">Envoyer</button>
+  </div>
+</form>
+
+<hr class="py-4">
+<!-- Localisation de l'entreprise -->
+<iframe class ="justify-content-center" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d90988.83733947306!2d4.670677857548708!3d44.54789258754663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1683041699923!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+{% endblock %}

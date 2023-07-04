@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block body %}
+
+<!-- ***************************************BODY********************************** -->
+
+ <div class="container">
+  <h1 class="text-uppercase text-center py-5">a propos</h1>
+  <div class="row">
+    <!-- Responsive -->
+    <div class="col-md-6 d-flex flex-column justify-content-center pt-5 p-5 align-items-center">
+      <div class="bubble">
+        <!-- Photo -->
+        <img class="text-align-center" src="images/image 2.jpg" alt="Photo Guillaume VERGIER"/>
+      </div>
+      <div>
+        <!-- Nom et métiers -->
+        <h2 class="text-center py-5">Guillaume VERGIER</h2>
+        <h3 class="text-center py-3">Développeur Web <br> Web Mobile</h3>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center pt-5 pb-5 align-items-center">
+      <div class="bubble">
+        <!-- Photo -->
+        <img src="images/image.jpg" alt="Photo Alain VERGIER"/>
+      </div>
+      <div>
+        <!-- Nom et métiers -->
+        <h2 class="text-center py-5">Alain VERGIER</h2>
+        <h3 class="text-center py-4">Gestion et traitement d'informations</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
