@@ -1,0 +1,26 @@
+penser super important :
+référencement
+RGPD
+MCD (modèle conceptuel de données) et méthode
+MLD (modèle logique des données)
+commenter front et back
+encapsulation (public fonction, private)
+dictionnaire de données (préparation de base, lister)
+requêtes préparées !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! (injections sql)
+failles csrf (token hidden button)
+doctrine (lien entre BDD et symfony) = ORM (mapping objet relationnel en interface)
+composer = gestionnaire de dépendance (installation simplifiée de framework)
+
+axe d'amélioration :
+pour conclure sur la politique des cookies : à préciser qu'un bandeau des cookies sera mit en place
+partie back-end sécurité : recaptcha
+rajouter une catégorie résumé pour le blog pour charger dans le card et rajouter le raw (chargement du contenu complet lorsque l'utilisateur ouvre l'article)
+
+difficultés rencontrées :
+recherches que j'ai fais
+
+LA CASE DOIT ETRE COCHEE POUR ENVOYER
+En cochant cette case vous acceptez que vos données personnelles soient traitées par notre équipe. Vous acceptez également nos <a href>Conditions Générales d'Utilisation
+
+use = route
+require et require once = fichier
